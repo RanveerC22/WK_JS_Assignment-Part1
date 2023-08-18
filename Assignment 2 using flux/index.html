@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows File Explorer</title>
+    <style>
+
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        text-align: center;
+        background-color: blueviolet;
+        color: white;
+        padding: 10px;
+        margin: 0;
+    }
+    
+    #user_ip {
+        width: 80%;
+        padding: 10px;
+        margin: 10px auto;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    #root-section {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 80%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .icons {
+        background-color: #f0f0f0;
+        border: none;
+        color: #333;
+        font-size: 20px;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #sub {
+        margin-top: 20px;
+        padding-left: 20px;
+        border-left: 1px solid #ccc;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+    .collapse{
+        display: none;
+    }
+
+    .rotate{
+        background: none;
+        border: none;
+        cursor: pointer;
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        display: inline-block;
+    }
+
+    .normal{
+        background: none;
+        border: none;
+        cursor: pointer;
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        display: inline-block;
+    }
+    /* Additional styles for responsiveness */
+    @media (max-width: 768px) {
+        #root-section {
+            width: 90%;
+        }
+    }
+    </style>
+    
+</head>
+<body>
+    <h1 style="text-align: center; background-color: blueviolet;">Windows File Explorer</h1>
+    <input placeholder="Enter the name of Folder/File" id="user_ip"></input>
+    <br>
+    <br>
+    <div id="root-section"> 
+        <!-- <span>Root Folder</span>
+        <button class="icons" id="folderadd" style="cursor: pointer;" onclick="createfoldereventlistner(this)"> &#128448;</button>
+        <button class="icons" id="fileadd" style="cursor: pointer;" onclick="createfileeventlistner(this)">&#128196;</button>
+        <button class="icons" id="deletebtn" style="cursor: pointer;" onclick="createdeleteeventlistner(this)">
+            &#x2715;</button>
+        -->
+    <!-- <div id="sub">
+
+    </div>  -->
+</div>
+</body>
+
+
+<script src="new_file_&_folder.js"></script>
+<script src="Action.js"></script>
+<script src="flux.js"></script>
+</html>
